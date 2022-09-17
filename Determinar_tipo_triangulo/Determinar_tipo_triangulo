@@ -1,0 +1,21 @@
+# Ejercicio de triangulos N.3:  determinar si un triangulo es equilatero, isoceles o escaleno
+
+#input
+print("\n----------------------------------------------------------------------------------------------------------")
+print("-----------Para determinar si un triangulo es recto, agudo u obtuso usando sus angulos --------")
+print("----------------------------------------------------------------------------------------------------------\n")
+a=int(input("\n Ingrese el angulo de a: "))
+b=int(input("\n Ingrese el angulo de b "))
+c=int(input("\n Ingrese el angulo  de c "))
+print(" ")
+
+#processing 
+if a>0 and b>0 and c>0 and a+b+c==180:
+    if a==90 or b==90 or c==90:
+        print("\n El triangulo es rectangulo \n")
+    elif a>90 or b>90 or c>90:
+        print("\n El triangulo es obtuso \n")
+    elif a<90 or b<90 or c<90:
+        print("\n El triangulo es agudo \n")
+else:
+    print("\n Los valores ingresados NO pueden formar un triangulo, uno de ellos es menor o igual a cero \n")

@@ -1,0 +1,24 @@
+#Ejercicio de triangulos N.3: determinar si un triangulo es equilatero, isosceles o escaleno 
+
+#input
+print("\n----------------------------------------------------------------------------------------------------------")
+print("-----------Para determinar si un triangulo es equilatero, isosceles o escaleno , ingrese los valores para los lados a, b, y c --------")
+print("----------------------------------------------------------------------------------------------------------\n")
+a=int(input("\n Ingrese el valor de a: "))
+b=int(input("\n Ingrese el valor de b "))
+c=int(input("\n Ingrese el valor de c "))
+print(" ")
+
+#processing 
+if a>0 and b>0 and c>0:
+    if a+b>c and a+c>b and b+c>a:
+        if a==b and a==c and b==c:
+            print("\n Los lados ingresados forman un triangulo equilatero \n")
+        elif a==b or a==c or c==b:
+            print("\n Los lados ingresados forman un triangulo isosceles \n")
+        elif a!=b and b!=c and a!=c:
+            print("\n Los lados ingresados forman un triangulo escaleno \n")
+    else:
+        print("\n Los valores ingresados NO pueden formar un triangulo \n")
+else:
+    print("\n Los valores ingresados NO pueden formar un triangulo, uno de ellos es menor o igual a cero \n")
